@@ -31,7 +31,7 @@ const StatCard = ({ icon: Icon, end, suffix, label }: { icon: IconType, end: num
 };
 
 
-const Stats = () => {
+export const Stats = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3,
@@ -61,5 +61,3 @@ const Stats = () => {
     </section>
   );
 };
-
-export default Stats;
