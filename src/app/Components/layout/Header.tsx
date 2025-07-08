@@ -1,51 +1,98 @@
+'use client';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import {FaTwitter, FaInstagram, FaPhoneAlt, FaFacebookF } from 'react-icons/fa';
 import { NavLink } from '@/app/types/NavLinks';
+import {SiLinkedin, SiYoutube } from "react-icons/si";
+import { IoMdMail } from "react-icons/io";
+import { usePathname } from 'next/navigation';
+
+
+import LogoImg from '../../../../public/Images/Logo.png'
+import Image from 'next/image';
 
 const Header = () => {
+  const pathname = usePathname();
+
+  const [isSticky, setSticky] = useState(false);
+
+  // This effect adds a scroll listener to the page
+  useEffect(() => {
+    const handleScroll = () => {
+      // Set sticky state if user scrolls past 50px
+      setSticky(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the listener when the component is removed
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const navLinks: NavLink[] = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/services', label: 'Service' },
-    { href: '/pages', label: 'Pages' },
+    { href: '/faq', label: 'FAQs' },
     { href: '/contact', label: 'Contact' },
   ];
 
   return (
-    <header className="absolute top-0 left-0 w-full z-20 text-white">
-      {/* Top Bar */}
-      <div className="bg-dark bg-opacity-50 px-4 py-2">
-        <div className="container mx-auto flex justify-between items-center text-sm">
+    // The main header's position is now dynamic
+    <header className={`w-[100%] z-30 transition-all duration-300 ${isSticky ? 'fixed top-0 shadow-lg w-[60%] ' : 'absolute'}`}>
+      {/* Top bar: This will disappear as the header becomes sticky */}
+      <div className={`bg-[rgb(0,58,102)] bg-opacity-50 px-14 py-2 transition-all duration-300 ${isSticky ? 'hidden' : 'block'}`}>
+        <div className="mx-auto flex justify-between items-center text- text-[#a9a9a9a9]">
           <div className="flex items-center space-x-4">
-            <a href="mailto:Example@gmail.com" className="hover:text-primary">Example@gmail.com</a>
-            <span>|</span>
-            <a href="tel:+01234567890" className="hover:text-primary">01234567890</a>
+            <a href="mailto:Example@gmail.com" className="hover:text-[] flex items-center gap-2"> <IoMdMail className='text-[#E02454]' size={19}/> Example@gmail.com</a>
+            <a href="tel:+01234567890" className="hover:text-[--primary] flex gap-1 items-center">< FaPhoneAlt className='text-[#E02454]' size={16} /> +01234567890</a>
           </div>
-          <div className="flex items-center space-x-4">
-            <a href="#" className="hover:text-primary"><FaFacebookF /></a>
-            <a href="#" className="hover:text-primary"><FaTwitter /></a>
-            <a href="#" className="hover:text-primary"><FaInstagram /></a>
-            <a href="#" className="hover:text-primary"><FaLinkedinIn /></a>
+          <div className="flex items-center space-x-4 text-[#E02454]">
+            <a href="#" className=" hover:bg-[white] transition-all border border-white rounded-full p-1.5"><FaTwitter /></a>
+            <a href="#" className=" hover:bg-[white] transition-all border border-white rounded-full p-1.5"><FaFacebookF /></a>
+            <a href="#" className=" hover:bg-[white] transition-all border border-white rounded-full p-1.5"><SiLinkedin /></a>
+            <a href="#" className=" hover:bg-[white] transition-all border border-white rounded-full p-1.5"><FaInstagram /></a>
+            <a href="#" className=" hover:bg-[white] transition-all border border-white rounded-full p-1.5"><SiYoutube /></a>
+          </div>
+          <div className='flex gap-2'>
+            <Link href='/'>Help <span>/</span></Link>
+            <Link href='/'>Support  <span>/</span></Link>
+            <Link href='/'>Contact</Link>
           </div>
         </div>
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-transparent px-4 py-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <Link href="/" className="text-3xl font-bold">
-            Travisa
+      <nav className="bg-[#F5F5F5] px-14 w-[100%] transform transition-all top-0 py-5">
+        <div className=" mx-auto flex justify-between items-center">
+          <Link href="/" className="text-5xl text-[#E02454] font-bold flex items-start">
+            <Image src={LogoImg} title='logo image' height={75} width={75} alt="LogoImage" />
+            <h1 className='transform -translate-y-1'>Travisa</h1>
           </Link>
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <Link key={link.label} href={link.href} className="hover:text-primary transition-colors duration-300">
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+              <Link
+                key={link.label}
+                href={link.href}
+                className={`text-xl transition-colors duration-300 ${
+                  isActive ? 'text-[#E02454]' : 'text-[#003865] hover:text-[#E02454]'
+                }`}
+              >
                 {link.label}
               </Link>
-            ))}
+              );
+            })}
+
+            <Link
+              href="/get-a-quote"
+              className="bg-[#E02454] text-white font-semibold rounded-full px-4 py-2 rounded- hover:bg-opacity-80 transition-opacity duration-300"
+            >
+              Get A Quote
+            </Link>
           </div>
-          <Link href="/get-a-quote" className="bg-primary text-white px-6 py-2 rounded-md hover:bg-opacity-80 transition-opacity duration-300">
-            Get A Quote
-          </Link>
         </div>
       </nav>
     </header>

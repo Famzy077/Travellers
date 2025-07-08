@@ -1,1 +1,16 @@
 @import "tailwindcss";
+.readMore {
+  position: relative;
+}
+
+.description {
+  opacity: 0;
+  transform: translateY(10rem);
+  transition: all 1s ease-in-out;
+}
+
+.readMore:hover .description {
+  transform: translateY(0);
+  opacity: 1;
+}
+
