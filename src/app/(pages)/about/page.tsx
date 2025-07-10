@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import About from '@/app/components/ui/About';
-import { Stats } from '@/app/components/ui/Stats';
-import Testimonials from '@/app/components/ui/Testimonials';
-import CallToAction from '@/app/components/ui/CallToAction';
+import About from '../../components/ui/About';
+import { Stats } from '../../components/ui/Stats';
+import Testimonials from '../../components/ui/Testimonials';
+import CallToAction from '../../components/ui/CallToAction';
 
 // A new component for the "About Us" page banner
 const AboutPageHero = () => {
