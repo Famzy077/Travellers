@@ -1,4 +1,4 @@
-import HeroSlider from '@/app/components/ui/HeroAnimation';
+import HeroSlider from '@/app/components/ui/heroAnimation';
 import Abouts from '../../components/ui/about';
 import {Stats} from '../../components/ui/stats';
 import VisaSection from '@/app/components/ui/visaCard';
