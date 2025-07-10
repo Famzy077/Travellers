@@ -3,7 +3,7 @@
 import Slider from 'react-slick';
 import TestimonialCard from './testiminialCard';
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
-import AnimatedSection from '../AnimationSection';
+import AnimatedSection from '../animationSection';
 
 // Custom Arrow Components
 type ArrowProps = React.ComponentProps<'button'> & { onClick?: React.MouseEventHandler<HTMLButtonElement> };

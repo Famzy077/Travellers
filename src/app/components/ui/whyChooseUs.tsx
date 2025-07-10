@@ -1,6 +1,6 @@
 'use client'
 import { FaDollarSign, FaCcVisa, FaPassport, FaUsers } from 'react-icons/fa';
-import AnimatedSection from '../AnimationSection';
+import AnimatedSection from '../animationSection';
 
 
 

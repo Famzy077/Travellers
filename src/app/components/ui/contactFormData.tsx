@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import AnimatedSection from '../AnimationSection';
+import AnimatedSection from '../animationSection';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({

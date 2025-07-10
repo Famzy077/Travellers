@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
 import { FaPassport, FaUsers, FaRegCheckCircle, FaHandshake } from 'react-icons/fa';
 import { IconType } from 'react-icons';
-import AnimatedSection from '../AnimationSection';
+import AnimatedSection from '../animationSection';
 
 // A reusable StatCard component
 const StatCard = ({ icon: Icon, end, suffix, label }: { icon: IconType, end: number, suffix: string, label: string }) => {
