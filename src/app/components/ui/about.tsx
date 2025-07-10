@@ -78,7 +78,7 @@ const About = () => {
                 </div>
                 </div>
 
-                <div className="mt-8 space-y-3 flex gap-5">
+                <div className="mt-8 space-y-3 flex flex-wrap lg:flex-nowrap gap-5">
                     <div className='bg-blue-50 w-[150px] text-center flex flex-col justify-center rounded-xl text-[#003865] p-5 text-5xl'>
                         <FaTicketAlt className='text-7xl  mx-5'/>
                         <h1 className='text-4xl font-bold'>34</h1> 

@@ -58,7 +58,7 @@ const visaData: Visa[] = [
 
 const VisaSection: React.FC = () => {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-20 lg:px-0 px-5">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <AnimatedSection>
