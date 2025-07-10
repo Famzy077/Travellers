@@ -3,8 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import "./globals.css";
-import CookieConsentWrapper from "./components/UI/CookieSettings";
-import ScrollButton from "./components/UI/Scroll";
+import CookieConsentWrapper from "./components/ui/CookieSettings";
+import ScrollButton from "./components/ui/Scroll";
 import PageTransitionHandler from "./components/layout/PageTransitionHandler";
 
 

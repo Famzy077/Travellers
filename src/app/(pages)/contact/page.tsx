@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import ContactInfo from '@/app/components/UI/ContactInfo';
-import ContactForm from '@/app/components/UI/ContactFormData';
+import ContactInfo from '@/app/components/ui/ContactInfo';
+import ContactForm from '@/app/components/ui/ContactFormData';
 
 const ContactPageHero = () => {
   return (

@@ -1,12 +1,12 @@
-import HeroAnimation from '@/app/components/UI/HeroAnimation';
-import About from '../../components/UI/About';
-import {Stats} from '../../components/UI/Stats';
-import VisaCard from '../../components/UI/VisaCard';
-import WhyChooseUs from '../../components/UI/WhyChooseUs';
-import Testimonials from '@/app/components/UI/Testimonials';
-import ScrollButton from '@/app/components/UI/Scroll';
-import FaqAccordion from '@/app/components/UI/FaqAccordion';
-import CallToAction from '@/app/components/UI/CallToAction';
+import HeroAnimation from '@/app/components/ui/HeroAnimation';
+import About from '../../components/ui/About';
+import {Stats} from '../../components/ui/Stats';
+import VisaCard from '../../components/ui/VisaCard';
+import WhyChooseUs from '../../components/ui/WhyChooseUs';
+import Testimonials from '@/app/components/ui/Testimonials';
+import ScrollButton from '@/app/components/ui/Scroll';
+import FaqAccordion from '@/app/components/ui/FaqAccordion';
+import CallToAction from '@/app/components/ui/CallToAction';
 
 export default function Home() {
   return (
