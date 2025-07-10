@@ -1,7 +1,7 @@
 'use client';
 
 import Slider from 'react-slick';
-import TestimonialCard from './TestiminialCard';
+import TestimonialCard from './testiminialCard';
 import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
 import AnimatedSection from '../AnimationSection';
 
