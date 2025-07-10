@@ -40,25 +40,27 @@ const WhyChooseUs = () => {
             <div className="w-16 h-[2px] bg-[#E02454]"></div>
           </div>
           <AnimatedSection>
-          <p className="text-[#003865] font-bold text-lg whitespace-nowrap">
-            WHY CHOOSE US
-          </p>
+            <p className="text-[#003865] font-bold text-lg whitespace-nowrap">
+              WHY CHOOSE US
+            </p>
           </AnimatedSection>
           <div className="flex flex-col  justify-center gap-[7px]">
             <div className="w-10 h-[2px] bg-[#003865]"></div>
             <div className="w-16 h-[2px] bg-[#E02454]"></div>
           </div>
         </div>
-        <h2 className="text-4xl font-bold text-[#003865] mt-4">
-          <AnimatedSection>
-          Offer Tailor Made Services That Our <br /> Client Requires
-          </AnimatedSection>
-        </h2>
-        <p className="mt-4 max-w-3xl mx-auto text-gray-600">
-          <AnimatedSection>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!
-          </AnimatedSection>
-        </p>
+
+        <AnimatedSection>
+          <h2 className="text-4xl font-bold text-[#003865] mt-4">
+            Offer Tailor Made Services That Our <br /> Client Requires
+          </h2>
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <p className="mt-4 max-w-3xl mx-auto text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!
+          </p>
+        </AnimatedSection>
 
         {/* Features Grid */}
         <AnimatedSection>
@@ -76,7 +78,6 @@ const WhyChooseUs = () => {
           </div>
         </AnimatedSection>
       </div>
-
     </section>
   );
 };

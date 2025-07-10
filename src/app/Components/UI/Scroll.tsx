@@ -3,7 +3,7 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import {FaArrowUp } from 'react-icons/fa';
 
-const Scroll = () => {
+const ScrollButton = () => {
   
       // --- Logic for the Scroll to Top button ---
       const [isVisible, setIsVisible] = useState(false);
@@ -46,4 +46,4 @@ const Scroll = () => {
   )
 }
 
-export default Scroll
+export default ScrollButton

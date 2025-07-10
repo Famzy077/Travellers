@@ -31,7 +31,7 @@ const Header = () => {
   }, []);
 
   const navLinks: NavLink[] = [
-    { href: '/', label: 'Home' },
+    { href: '/home', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/services', label: 'Service' },
     { href: '/faq', label: 'FAQs' },
@@ -87,7 +87,7 @@ const Header = () => {
             })}
 
             <Link
-              href="/get-a-quote"
+              href="/services"
               className="bg-[#E02454] text-white font-semibold rounded-full px-4 py-2 rounded- hover:bg-opacity-80 transition-opacity duration-300"
             >
               Get A Quote

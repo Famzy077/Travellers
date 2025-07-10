@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import AnimatedSection from "../AnimationSection";
+import Link from "next/link";
 
 const visaData = [
   {
@@ -104,9 +105,10 @@ const VisaSection: React.FC = () => {
                 <div className="bg-[#003B64]/99 text-white rounded-xl rounded-b-none px-2 mx-10 py-4 text-center">
                   <h2 className="text-2xl mb-2 border-b border-gray-500 font-semibold">{visa.title}</h2>
                   <p className="text- mb-3">{visa.description}</p>
-                  <button className="bg-[#DF1C50] cursor-pointer text-white rounded-full px-4 py-2 text-sm font-semibold hover:bg-[#c21443] transition">
+                  <Link href={`/visa/${visa.id}`}><button className="bg-[#DF1C50] cursor-pointer text-white rounded-full px-4 py-2 text-sm font-semibold hover:bg-[#c21443] transition">
                     Explore More
                   </button>
+                  </Link>
                 </div>
               </div>
             </div>

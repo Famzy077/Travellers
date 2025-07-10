@@ -18,7 +18,7 @@ const TestimonialCard = ({ quote, name, profession, imageUrl, rating }: Testimon
           <p className="text-gray-600">{quote}</p>
           <div className="flex mt-4">
             {[...Array(5)].map((_, i) => (
-              <FaStar key={i} className={i < rating ? 'text-yellow-400' : 'text-gray-300'} />
+              <FaStar key={i} className={i < rating ? 'text-[#E02454]' : 'text-gray-300'} />
             ))}
           </div>
           {/* This creates the speech bubble tail */}
