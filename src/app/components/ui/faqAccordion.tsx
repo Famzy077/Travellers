@@ -1,4 +1,4 @@
-import AccordionItem from "@/app/types/AccordionItem";
+import AccordionItem from "@/app/types/accordionItem";
 
 const FaqAccordion = () => {
   const faqData = [
