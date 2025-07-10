@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import About from '../../components/ui/About';
-import { Stats } from '../../components/ui/Stats';
+import Abouts from '@/app/components/ui/about';
+import { Stats } from '@/app/components/ui/stats';
 import Testimonials from '../../components/ui/Testimonials';
-import CallToAction from '../../components/ui/CallToAction';
+import CallToAction from '@/app/components/ui/callToAction';
 
 // A new component for the "About Us" page banner
 const AboutPageHero = () => {
@@ -32,7 +32,7 @@ const AboutPage = () => {
   return (
     <main className="bg-white">
       <AboutPageHero />
-      <About />
+      <Abouts />
       <Stats />
       <Testimonials/>
       <CallToAction/>

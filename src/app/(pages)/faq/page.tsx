@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import FaqAccordion from '@/app/components/ui/FaqAccordion';
 import Testimonials from '@/app/components/ui/Testimonials';
-import CallToAction from '@/app/components/ui/CallToAction';
+import CallToAction from '@/app/components/ui/callToAction';
 
 const FAQsPageHero = () => {
   return (

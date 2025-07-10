@@ -3,9 +3,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
-import Modal from '../../../components/ui/Modal';
-import CallToAction from '../../../components/ui/CallToAction';
-
+import Modal from '@/app/components/ui/modal';
+import CallToAction from '@/app/components/ui/callToAction';
 // Define a type for our visa data for better type safety
 interface Visa {
   id: number;
