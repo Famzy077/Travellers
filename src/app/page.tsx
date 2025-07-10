@@ -1,16 +1,13 @@
-import React from 'react'
-import { redirect } from 'next/navigation';
-interface PageProps {
-  children: React.ReactNode;
-}
+'use client';
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
-const page: React.FC<PageProps> = ({ children }) => {
-  redirect('/home');
-  return (
-    <div>
-      {children}
-    </div>
-  )
-}
+export default function Home() {
+  const router = useRouter();
 
-export default page
+  useEffect(() => {
+    router.replace('/home');
+  }, [router]);
+
+  return null;
+}
