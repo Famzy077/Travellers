@@ -64,7 +64,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="bg-[#E02454] py-4">
         <div className="container mx-auto px-4 text-center text-white text-sm">
-          <p>© Travisa, All right reserved</p>
+          <p>© {`${currentYear} Travisa, All right reserved`}</p>
         </div>
       </div>
     </footer>
@@ -72,3 +72,4 @@ const Footer = () => {
 };
 
 export default Footer;
+const currentYear = new Date().getFullYear();

@@ -5,6 +5,8 @@ import VisaCard from '../../components/UI/VisaCard';
 import WhyChooseUs from '../../components/UI/WhyChooseUs';
 import Testimonials from '@/app/components/UI/Testimonials';
 import ScrollButton from '@/app/components/UI/Scroll';
+import FaqAccordion from '@/app/components/UI/FaqAccordion';
+import CallToAction from '@/app/components/UI/CallToAction';
 
 export default function Home() {
   return (
@@ -15,7 +17,11 @@ export default function Home() {
       <VisaCard />
       <WhyChooseUs />
       <Testimonials />
+      <div className='p-7'>
+        <FaqAccordion/>
+      </div>
       <ScrollButton/>
+      <CallToAction/>
     </main>
   );
 }

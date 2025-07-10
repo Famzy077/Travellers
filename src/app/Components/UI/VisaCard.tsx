@@ -3,49 +3,57 @@ import Image from "next/image";
 import AnimatedSection from "../AnimationSection";
 import Link from "next/link";
 
-const visaData = [
+interface Visa {
+  id: number;
+  title: string;
+  imageUrl: string;
+  description: string;
+  longDescription: string;
+}
+
+const visaData: Visa[] = [
   {
     id: 1,
     title: "Job Visa",
     imageUrl: "/Images/service-1.jpg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.",
+    description: "Brief text about getting a visa for employment purposes.",
+    longDescription: 'A Job Visa is required for individuals seeking employment in a foreign country. The process typically involves a job offer from a registered company, verification of your qualifications, and meeting the specific labor market requirements of the destination country. Our team will assist you with every step, from document preparation to submission.'
   },
   {
     id: 2,
     title: "Business Visa",
     imageUrl: "/Images/service-2.jpg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.",
+    description: "For entrepreneurs and professionals attending meetings or conferences.",
+    longDescription: 'Business Visas are for individuals traveling for business-related purposes such as meetings, negotiations, or conferences. This visa does not typically permit direct employment. We help you prepare the necessary invitation letters, proof of business activities, and financial statements to ensure a smooth application.'
   },
   {
     id: 3,
-    title: "Diplomatic Visa",
-    imageUrl: "/Images/service-1.jpg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.",
+    title: "Students Visa",
+    imageUrl: "/Images/service-3.jpg",
+    description: "Brief text about getting a visa for employment purposes.",
+    longDescription: 'A Job Visa is required for individuals seeking employment in a foreign country. The process typically involves a job offer from a registered company, verification of your qualifications, and meeting the specific labor market requirements of the destination country. Our team will assist you with every step, from document preparation to submission.'
   },
   {
     id: 4,
-    title: "Students Visa",
-    imageUrl: "/Images/service-2.jpg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.",
+    title: "Diplomatic Visa",
+    imageUrl: "/Images/service-4.jpg",
+    description: "For entrepreneurs and professionals attending meetings or conferences.",
+    longDescription: 'Business Visas are for individuals traveling for business-related purposes such as meetings, negotiations, or conferences. This visa does not typically permit direct employment. We help you prepare the necessary invitation letters, proof of business activities, and financial statements to ensure a smooth application.'
   },
   {
     id: 5,
     title: "Residence Visa",
-    imageUrl: "/Images/service-3.jpg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.",
+    imageUrl: "/Images/service-1.jpg",
+    description: "Brief text about getting a visa for employment purposes.",
+    longDescription: 'A Job Visa is required for individuals seeking employment in a foreign country. The process typically involves a job offer from a registered company, verification of your qualifications, and meeting the specific labor market requirements of the destination country. Our team will assist you with every step, from document preparation to submission.'
   },
   {
     id: 6,
     title: "Tourist Visa",
-    imageUrl: "/Images/service-4.jpg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fugit dolores nesciunt adipisci obcaecati veritatis cum, ratione aspernatur autem velit.",
-  },
+    imageUrl: "/Images/service-3.jpg",
+    description: "For entrepreneurs and professionals attending meetings or conferences.",
+    longDescription: 'Business Visas are for individuals traveling for business-related purposes such as meetings, negotiations, or conferences. This visa does not typically permit direct employment. We help you prepare the necessary invitation letters, proof of business activities, and financial statements to ensure a smooth application.'
+  }
 ];
 
 const VisaSection: React.FC = () => {
@@ -68,7 +76,7 @@ const VisaSection: React.FC = () => {
             </div>
           </div>
           </AnimatedSection>
-         <h2 className="text-4xl font-bold text-[#003865] mt-2">
+         <h2 className="text-3xl lg:text-4xl font-bold text-[#003865] mt-2">
           <AnimatedSection>
            Enabling Your Immigration Successfully
            </AnimatedSection>
@@ -80,41 +88,41 @@ const VisaSection: React.FC = () => {
          </AnimatedSection>
         </div>
 
-        <AnimatedSection>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center">
           {visaData.map((visa, index) => (
-            <div
-              className="group relative rounded-2xl overflow-hidden shadow-lg"
-              key={index}
-            >
-              <div className="relative h-[400px] w-full overflow-hidden">
-                <Image
-                  src={visa.imageUrl}
-                  alt={visa.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="transform transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute bottom-0 px-6 w-full text-center py-3 bg-[#003B64] text-white text-lg font-semibold">
-                  <h2 className="mb-2 text-2xl">{visa.title}</h2>
-                  <button className="bg-gray-100 rounded-[7px] px-3 p-2 text-[#003B64] text-sm">Explore More</button>
+            
+          <AnimatedSection key={index}>
+              <div
+                className="group relative rounded-2xl overflow-hidden shadow-lg"
+              >
+                <div className="relative h-[400px] w-full overflow-hidden">
+                  <Image
+                    src={visa.imageUrl}
+                    alt={visa.title}
+                    layout="fill"
+                    objectFit="cover"
+                    className="transform transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute bottom-0 px-6 w-full text-center py-3 bg-[#003B64] text-white text-lg font-semibold">
+                    <h2 className="mb-2 text-2xl">{visa.title}</h2>
+                    <button className="bg-gray-100 rounded-[7px] px-3 p-2 text-[#003B64] text-sm">Explore More</button>
+                  </div>
                 </div>
-              </div>
 
-              <div className="absolute inset-x-0 -bottom-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out px-4 pb-5">
-                <div className="bg-[#003B64]/99 text-white rounded-xl rounded-b-none px-2 mx-10 py-4 text-center">
-                  <h2 className="text-2xl mb-2 border-b border-gray-500 font-semibold">{visa.title}</h2>
-                  <p className="text- mb-3">{visa.description}</p>
-                  <Link href={`/visa/${visa.id}`}><button className="bg-[#DF1C50] cursor-pointer text-white rounded-full px-4 py-2 text-sm font-semibold hover:bg-[#c21443] transition">
-                    Explore More
-                  </button>
-                  </Link>
+                <div className="absolute inset-x-0 -bottom-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out px-4 pb-5">
+                  <div className="bg-[#003B64]/99 text-white rounded-xl rounded-b-none px-2 mx-10 py-4 text-center">
+                    <h2 className="text-2xl mb-2 border-b border-gray-500 font-semibold">{visa.title}</h2>
+                    <p className="text- mb-3">{visa.description}</p>
+                    <Link href={`/visa/${visa.id}`}><button className="bg-[#DF1C50] cursor-pointer text-white rounded-full px-4 py-2 text-sm font-semibold hover:bg-[#c21443] transition">
+                      Explore More
+                    </button>
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
+            </AnimatedSection>
           ))}
         </div>
-        </AnimatedSection>
       </div>
     </section>
   );

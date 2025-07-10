@@ -6,7 +6,9 @@ import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
 import AnimatedSection from '../AnimationSection';
 
 // Custom Arrow Components
-const NextArrow = (props: any) => {
+type ArrowProps = React.ComponentProps<'button'> & { onClick?: React.MouseEventHandler<HTMLButtonElement> };
+
+const NextArrow = (props: ArrowProps) => {
   const { onClick } = props;
   return (
     <button
@@ -18,7 +20,7 @@ const NextArrow = (props: any) => {
   );
 };
 
-const PrevArrow = (props: any) => {
+const PrevArrow = (props: ArrowProps) => {
   const { onClick } = props;
   return (
     <button
@@ -94,13 +96,13 @@ const Testimonials = () => {
       </div>
 
       <AnimatedSection>
-        <h2 className="text-4xl font-bold text-center text-[#003865] mt-4">
+        <h2 className="text-3xl lg:text-4xl font-bold text-center text-[#003865] mt-4">
           What Our Clients Say
         </h2>
       </AnimatedSection>
 
       <AnimatedSection>
-        <p className="mt-4 max-w-3xl text-center mx-auto text-gray-600">
+        <p className="mt-4 max-w-3xl text-center px-5 lg:px-0 pb-7 mx-auto text-gray-600">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!
         </p>
       </AnimatedSection>

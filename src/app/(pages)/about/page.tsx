@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import About from '@/app/components/UI/About';
 import { Stats } from '@/app/components/UI/Stats';
+import Testimonials from '@/app/components/UI/Testimonials';
+import CallToAction from '@/app/components/UI/CallToAction';
 
 // A new component for the "About Us" page banner
 const AboutPageHero = () => {
@@ -32,6 +34,8 @@ const AboutPage = () => {
       <AboutPageHero />
       <About />
       <Stats />
+      <Testimonials/>
+      <CallToAction/>
     </main>
   );
 };

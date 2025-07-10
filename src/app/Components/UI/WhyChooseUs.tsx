@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
         </div>
 
         <AnimatedSection>
-          <h2 className="text-4xl font-bold text-[#003865] mt-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#003865] mt-4">
             Offer Tailor Made Services That Our <br /> Client Requires
           </h2>
         </AnimatedSection>

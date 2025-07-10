@@ -51,17 +51,17 @@ const About = () => {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
-                className='w-[100%] max-sm:mt-16 md:mt-16'
+                className='w-[100%] max-sm:mt-16 md:mt-16 lg:mt-0'
             >
                 <div className="flex items-center gap-2">
-                    <h2 className="text-[#003865] font-bold text-lg whitespace-nowrap">ABOUT THE COMPANY</h2>
+                    <h2 className="text-[#003865] lg:font-bold font-semibold text-lg whitespace-nowrap">ABOUT THE COMPANY</h2>
                     <div className="flex flex-col justify-center gap-[7px]">
                         <div className="w-10 h-[2px] bg-[#003865]"></div>
                         <div className="w-16 h-[2px] bg-[#E02454]"></div>
                     </div>
                 </div>
-                <h2 className="text-2xl md:text-5xl font-bold text-[#003865] mt-2 leading-tight">
-                We&apos;re Trusted <br /> Immigration Consultant <br /> Agency.
+                <h2 className="text-3xl lg:text-4xl font-bold text-[#003865] mt-2 leading-tight">
+                    We&apos;re Trusted <br /> Immigration Consultant <br /> Agency.
                 </h2>
                 <p className="mt-4 text-lg text-zinc-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt architecto consectetur iusto perferendis blanditiis assumenda dignissimos, commodi fuga culpa earum explicabo libero sint est mollitia saepe!

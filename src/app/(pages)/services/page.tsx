@@ -4,6 +4,7 @@ import VisaSection from '@/app/components/UI/VisaCard';
 import { Stats } from '@/app/components/UI/Stats';
 import WhyChooseUs from '@/app/components/UI/WhyChooseUs';
 import Testimonials from '@/app/components/UI/Testimonials';
+import CallToAction from '@/app/components/UI/CallToAction';
 
 const ServicesPageHero = () => {
   return (
@@ -34,6 +35,7 @@ const Services = () => {
       <Stats/>
       <WhyChooseUs/>
       <Testimonials/>
+      <CallToAction/>
     </div>
   )
 }

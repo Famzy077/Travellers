@@ -5,6 +5,8 @@ import Footer from "./components/layout/Footer";
 import "./globals.css";
 import CookieConsentWrapper from "./components/UI/CookieSettings";
 import ScrollButton from "./components/UI/Scroll";
+import PageTransitionHandler from "./components/layout/PageTransitionHandler";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +34,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header/>
+        <PageTransitionHandler/>
         {children}
         <Footer/>
         <ScrollButton/>

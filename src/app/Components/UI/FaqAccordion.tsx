@@ -22,6 +22,7 @@ const FaqAccordion = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
+        <h1 className='capitalize text-3xl lg:text-4xl font-bold text-center text-[#003865] pb-2 '>frequently asked question</h1>
       {faqData.map((faq, index) => (
         <AccordionItem key={index} question={faq.question} answer={faq.answer} />
       ))}

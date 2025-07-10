@@ -1,10 +1,14 @@
 import React from 'react'
-import Home from "./(pages)/home/page"
+import { redirect } from 'next/navigation';
+interface PageProps {
+  children: React.ReactNode;
+}
 
-const page = () => {
+const page: React.FC<PageProps> = ({ children }) => {
+  redirect('/home');
   return (
     <div>
-      <Home/>
+      {children}
     </div>
   )
 }

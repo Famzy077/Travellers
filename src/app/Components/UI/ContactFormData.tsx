@@ -39,7 +39,7 @@ const ContactForm = () => {
         </div>
       </div>
       <AnimatedSection>
-        <h2 className="text-4xl font-bold text-[#003865] mt-4">Send Your Message</h2>
+        <h2 className="text-3xl lg:text-4xl font-bold text-[#003865] mt-4">Send Your Message</h2>
         <p className="mt-4 text-gray-500">
             The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes.
         </p>

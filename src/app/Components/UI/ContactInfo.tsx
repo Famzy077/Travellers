@@ -15,7 +15,7 @@ const ContactInfo = () => {
             <div className="w-16 h-[2px] bg-[#E02454]"></div>
         </div>
       </div>
-      <h2 className="text-4xl font-bold text-[#003865] mt-4 leading-tight">
+      <h2 className="text-3xl lg:text-4xl font-bold text-[#003865] mt-4 leading-tight ">
         Have Questions? <br /> Don&apos;t Hesitate to Contact Us
       </h2>
       <p className="mt-4 text-gray-500">
@@ -35,7 +35,7 @@ const ContactInfo = () => {
           </div>
         </div>
 
-       <div className='flex flex-wrap lg:gap-1 gap-8'>
+       <div className='flex flex-wrap lg:flex-nowrap lg:gap-1 gap-8'>
             {/* Quick Contact */}
             <div className="flex items-start gap-4">
                 <div className="p-4 rounded-lg">
