@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FaTwitter, FaInstagram, FaPhoneAlt, FaFacebookF, FaBars, FaTimes } from 'react-icons/fa';
-import { NavLink } from '@/app/types/NavLinks';
+import { NavLink } from '@/app/types/navLinks';
 import { SiLinkedin, SiYoutube } from "react-icons/si";
 import { IoMdMail } from "react-icons/io";
 import { usePathname } from 'next/navigation';
