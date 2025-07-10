@@ -3,7 +3,7 @@ import Link from 'next/link';
 import VisaSection from '@/app/components/ui/VisaCard';
 import { Stats } from '@/app/components/ui/stats';
 import WhyChooseUs from '@/app/components/ui/WhyChooseUs';
-import Testimonials from '@/app/components/ui/Testimonials';
+import Testimonials from '@/app/components/ui/testimonials';
 import CallToAction from '@/app/components/ui/callToAction';
 
 const ServicesPageHero = () => {

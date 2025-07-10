@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Abouts from '@/app/components/ui/about';
 import { Stats } from '@/app/components/ui/stats';
-import Testimonials from '../../components/ui/Testimonials';
+import Testimonials from '@/app/components/ui/testimonials';
 import CallToAction from '@/app/components/ui/callToAction';
 
 // A new component for the "About Us" page banner

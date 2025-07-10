@@ -3,7 +3,7 @@ import Abouts from '../../components/ui/about';
 import {Stats} from '../../components/ui/stats';
 import VisaCard from '../../components/ui/VisaCard';
 import WhyChooseUs from '../../components/ui/WhyChooseUs';
-import Testimonials from '@/app/components/ui/Testimonials';
+import Testimonials from '@/app/components/ui/testimonials';
 import ScrollButton from '@/app/components/ui/Scroll';
 import FaqAccordion from '@/app/components/ui/FaqAccordion';
 import CallToAction from '@/app/components/ui/callToAction';
