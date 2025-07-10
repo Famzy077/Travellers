@@ -47,10 +47,10 @@ export const Stats = () => {
   return (
     // Add your world map background image here
     <section ref={ref} className="bg-center w-[100%] bg-gray-100 opacity-90" style={{ backgroundImage: "url('/Images/breadcrumb.png')"}}>
-      <div className="w-full p-10 bg-white opacity-99">
+      <div className="w-full py-10 p-1 bg-white opacity-95">
         <AnimatedSection>
           {inView && (
-            <div className="grid bg-white opacity-100 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16">
+            <div className="grid z-30 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16">
               {stats.map((stat, index) => (
                 <StatCard key={index} {...stat} />
               ))}

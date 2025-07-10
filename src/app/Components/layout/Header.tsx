@@ -64,10 +64,10 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="bg-[#F5F5F5] px-14 w-[100%] transform transition-all top-0 py-5">
+      <nav className="bg-[#F5F5F5] px-14 w-[100%] transform transition-all top-0 py-4">
         <div className=" mx-auto flex justify-between items-center">
-          <Link href="/" className="text-5xl text-[#E02454] font-bold flex items-start">
-            <Image src={LogoImg} title='logo image' height={75} width={75} alt="LogoImage" />
+          <Link href="/" className="text-4xl text-[#E02454] font-bold flex items-start">
+            <Image src={LogoImg} title='logo image' height={65} width={65} alt="LogoImage" />
             <h1 className='transform -translate-y-1'>Travisa</h1>
           </Link>
           <div className="hidden md:flex items-center space-x-8">
@@ -77,7 +77,7 @@ const Header = () => {
               <Link
                 key={link.label}
                 href={link.href}
-                className={`text-xl transition-colors duration-300 ${
+                className={`text-lg transition-colors duration-300 ${
                   isActive ? 'text-[#E02454]' : 'text-[#003865] hover:text-[#E02454]'
                 }`}
               >

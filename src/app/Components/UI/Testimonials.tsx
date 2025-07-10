@@ -1,90 +1,119 @@
-import React from "react";
-import Image from "next/image";
+'use client';
 
-const visaData = [
-  {
-    title: "Job Visa",
-    imageUrl: "/Images/service-1.jpg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-  },
-  {
-    title: "Business Visa",
-    imageUrl: "/Images/service-2.jpg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-  },
-  {
-    title: "Diplomatic Visa",
-    imageUrl: "/Images/service-1.jpg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-  },
-  {
-    title: "Students Visa",
-    imageUrl: "/Images/service-2.jpg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-  },
-  {
-    title: "Residence Visa",
-    imageUrl: "/Images/service-3.jpg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-  },
-  {
-    title: "Tourist Visa",
-    imageUrl: "/Images/service-4.jpg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-  },
-];
+import Slider from 'react-slick';
+import TestimonialCard from './TestiminialCard';
+import { FaArrowLeftLong, FaArrowRightLong } from 'react-icons/fa6';
+import AnimatedSection from '../AnimationSection';
 
-const VisaSection: React.FC = () => {
+// Custom Arrow Components
+const NextArrow = (props: any) => {
+  const { onClick } = props;
   return (
-    <section className="bg-white py-20">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-12">
-          <div className="inline-block bg-gray-100 rounded-full px-6 py-2 mb-4">
-            <h5 className="text-primary text-lg font-semibold">Visa Categories</h5>
-          </div>
-          <h2 className="text-4xl font-bold mb-4">Enabling Your Immigration Successfully</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus.
-          </p>
+    <button
+      className="absolute top-0 right-0 -mt-12 text-4xl font-light text-[#003865] cursor-pointer"
+      onClick={onClick}
+    >
+      <FaArrowRightLong />
+    </button>
+  );
+};
+
+const PrevArrow = (props: any) => {
+  const { onClick } = props;
+  return (
+    <button
+      className="absolute top-0 right-12 -mt-12 text-4xl cursor-pointer text-[#003865]"
+      onClick={onClick}
+    >
+      <FaArrowLeftLong />
+    </button>
+  );
+};
+
+
+const Testimonials = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  const testimonialData = [
+    {
+      quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati eiusmod tempor incididunt.',
+      name: 'Person Name',
+      profession: 'Profession',
+      imageUrl: '/Images/testimonial-1.jpg', // Replace with your image paths
+      rating: 5,
+    },
+    {
+      quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati eiusmod tempor incididunt.',
+      name: 'Person Name',
+      profession: 'Profession',
+      imageUrl: '/Images/testimonial-2.jpg',
+      rating: 5,
+    },
+    {
+      quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati eiusmod tempor incididunt.',
+      name: 'Another Person',
+      profession: 'Developer',
+      imageUrl: '/Images/testimonial-3.jpg',
+      rating: 5,
+    },
+  ];
+
+  return (
+    <section className="py-10 bg-white">
+      <div className="flex justify-center items-center gap-4">
+        <div className="flex flex-col  justify-center gap-[7px]">
+          <div className="w-10 transform translate-x-6 h-[2px] bg-[#003865]"></div>
+          <div className="w-16 h-[2px] bg-[#E02454]"></div>
         </div>
+        <AnimatedSection>
+        <p className="text-[#003865] font-bold text-lg whitespace-nowrap">
+          OUR CLIENTS RIVIEWS
+        </p>
+        </AnimatedSection>
+        <div className="flex flex-col  justify-center gap-[7px]">
+          <div className="w-10 h-[2px] bg-[#003865]"></div>
+          <div className="w-16 h-[2px] bg-[#E02454]"></div>
+        </div>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-center ml-10">
-          {visaData.map((visa, index) => (
-            <div className="flex readMore justify-center flex-col group relative" key={index}>
-              <Image
-                src={visa.imageUrl}
-                alt={visa.title}
-                width={320}
-                height={300}
-                className="rounded-2xl h-[300px] w-[20rem] object-cover"
-              />
-              <div className="relative">
-                <button className="bg-blue-500 text-xl rounded-[6px] relative text-white p-2 py-3 transform -translate-y-5 translate-x-24">
-                  Explore More
-                </button>
+      <h2 className="text-4xl font-bold text-center text-[#003865] mt-4">
+        <AnimatedSection>
+        What Our Clients Say
+        </AnimatedSection>
+      </h2>
+      <p className="mt-4 max-w-3xl text-center mx-auto text-gray-600">
+        <AnimatedSection>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!
+        </AnimatedSection>
+      </p>
+      
 
-                <div className="w-[260px] description -bottom-10 text-white left-8 rounded-xl bg-blue-600 py-12 pb-2 absolute px-3 text-center opacity-0 translate-y-40 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-1000 ease-in-out">
-                  <h2 className="text-center border-b font-semibold border-gray-200">
-                    {visa.title}
-                  </h2>
-                  <p className="mt-2 text-sm">{visa.description}</p>
-                  <button className="bg-pink-500 rounded-full my-3 text-white p-2 py-2">
-                    Explore More
-                  </button>
-                </div>
-              </div>
-            </div>
+      <div className="container mx-auto px-4 relative">
+        <Slider {...settings}>
+          {testimonialData.map((testimonial, index) => (
+            <TestimonialCard key={index} {...testimonial} />
           ))}
-        </div>
+        </Slider>
       </div>
     </section>
   );
 };
 
-export default VisaSection;
+export default Testimonials;

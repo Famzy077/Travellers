@@ -3,7 +3,8 @@ import About from '../../components/UI/About';
 import {Stats} from '../../components/UI/Stats';
 import VisaCard from '../../components/UI/VisaCard';
 import WhyChooseUs from '../../components/UI/WhyChooseUs';
-// import Testimonials from '@/app/components/UI/Testimonials';
+import Testimonials from '@/app/components/UI/Testimonials';
+import Scroll from '@/app/components/UI/Scroll';
 // import '../../globals.css'
 
 export default function Home() {
@@ -14,7 +15,8 @@ export default function Home() {
       <Stats />
       <VisaCard />
       <WhyChooseUs />
-      {/* <Testimonials /> */}
+      <Scroll/>
+      <Testimonials />
     </main>
   );
 }

@@ -13,6 +13,7 @@ const HeroSlider = () => {
     slidesToScroll: 1,
     autoplay: true,
     arrows: true,
+    
   };
 
   const slides = [

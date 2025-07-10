@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white overflow-hidden">
       <div className="lg:container mx-auto px-2 lg:px-10">
         <div className="lg:flex flex-cols-1 px-4 lg:px-10 gap-10 lg:gap-14 items-start">
           

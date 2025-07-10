@@ -14,3 +14,97 @@
   opacity: 1;
 }
 
+/* Why choose us */
+.feature-card {
+  position: relative;
+  background: white;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.icon-box {
+  width: 6rem;
+  height: 6rem;
+  background: #f1f5f9;
+  border-radius: 1rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.6s ease;
+  z-index: 1;
+  position: relative; 
+  width: 100px;
+  height: 100px;
+}
+
+.icon {
+  font-size: 4rem;
+  color: #003865;
+  transition: color 0.3s ease;
+}
+
+.title {
+  color: #003865;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  z-index: 1;
+  position: relative;
+}
+
+.descriptions {
+  margin-top: 0.5rem;
+  font-size: 17.3px;
+  z-index: 1;
+  color: rgb(153, 153, 153);
+  position: relative;
+}
+
+/* Backdrop animation */
+.backdrop {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(234, 234, 250);
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  z-index: 0;
+  border-radius: 1rem;
+}
+
+/* On hover: slide backdrop up */
+.feature-card:hover .backdrop {
+  transform: translateY(0%);
+}
+
+/* On click: rotate icon */
+/* .feature-card.clicked .icon-box {
+  transform: rotate(360deg);
+} */
+
+.feature-card:hover .icon {
+  color: #E02454;
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out;
+}
+.feature-card:hover .icon-box{
+  background-color: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+/* Optional: make text white on hover */
+/* .feature-card:hover .title,
+.feature-card:hover .description,
+.feature-card:hover .icon {
+  color: white;
+} */

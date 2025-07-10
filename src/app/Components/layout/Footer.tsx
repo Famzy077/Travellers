@@ -28,9 +28,9 @@ const Footer = () => {
         {/* Opening Time */}
         <div>
           <h3 className="text-xl font-bold text-white mb-4">Opening Time</h3>
-          <p>Mon - Friday: 09.00 am to 07.00 pm [cite: 119, 120]</p>
-          <p className="mt-2">Satday: 10.00 am to 05.00 pm [cite: 121, 122]</p>
-          <p className="mt-2">All Sunday is our vacation [cite: 123, 124]</p>
+          <p>Mon - Friday: 09.00 am to 07.00 pm</p>
+          <p className="mt-2">Satday: 10.00 am to 05.00 pm</p>
+          <p className="mt-2">All Sunday is our vacation</p>
         </div>
 
         {/* Our Services */}
@@ -56,7 +56,7 @@ const Footer = () => {
               placeholder="Enter your email" 
               className="w-full px-4 py-3 bg-white text-gray-900 rounded-l-md focus:outline-none"
             />
-            <button type="submit" className="bg-pink-600 text-white px-4 py-2 rounded-r-md hover:bg-pink-700">
+            <button type="submit" className="bg-pink-600 cursor-pointer text-white px-4 py-2 rounded-r-md hover:bg-pink-700">
               Signup
             </button>
           </form>
