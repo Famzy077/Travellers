@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
-import FaqAccordion from '@/app/components/ui/FaqAccordion';
+import FaqAccordion from '@/app/components/ui/faqAccordion';
 import Testimonials from '@/app/components/ui/testimonials';
 import CallToAction from '@/app/components/ui/callToAction';
 

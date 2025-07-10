@@ -4,7 +4,7 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import "./globals.css";
 import CookieConsentWrapper from "./components/ui/CookieSettings";
-import ScrollButton from "./components/ui/Scroll";
+import ScrollButton from "./components/ui/scroll";
 import PageTransitionHandler from "./components/layout/PageTransitionHandler";
 
 

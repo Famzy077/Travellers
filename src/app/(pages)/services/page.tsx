@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link';
-import VisaSection from '@/app/components/ui/VisaCard';
+import VisaSection from '@/app/components/ui/visaCard';
 import { Stats } from '@/app/components/ui/stats';
-import WhyChooseUs from '@/app/components/ui/WhyChooseUs';
+import WhyChooseUs from '@/app/components/ui/whyChooseUs';
 import Testimonials from '@/app/components/ui/testimonials';
 import CallToAction from '@/app/components/ui/callToAction';
 

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import Preloader from '../ui/Preloader';
+import Preloader from '../ui/preloader';
 
 const PageTransitionHandler = () => {
   const [isLoading, setIsLoading] = useState(false);
