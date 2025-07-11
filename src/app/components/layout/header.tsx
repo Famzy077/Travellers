@@ -97,7 +97,7 @@ const Header = () => {
 
             {/* Hamburger Menu Icon for Mobile */}
             <div className="md:hidden">
-              <button onClick={() => setIsMenuOpen(true)} className="text-[#003865] text-2xl">
+              <button onClick={() => setIsMenuOpen(true)} className="text-[#003865] text-2xl cursor-pointer">
                 <SquareMenu size={36}/>
               </button>
             </div>
@@ -115,7 +115,7 @@ const Header = () => {
       >
         <div className="flex relative justify-between items-center p-6 border-b border-gray-300">
           <h2 className="text-xl font-bold text-[#003865]">Menu</h2>
-          <button onClick={() => setIsMenuOpen(false)} className="text-[#003865] text-2xl">
+          <button onClick={() => setIsMenuOpen(false)} className="text-[#003865] text-2xl cursor-pointer">
             <FaTimes />
           </button>
         </div>

@@ -78,7 +78,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-10 bg-white">
+    <section className="py-10 pb-5 bg-white">
       <div className="flex justify-center items-center gap-4">
         <div className="flex flex-col  justify-center gap-[7px]">
           <div className="w-10 transform translate-x-6 h-[2px] bg-[#003865]"></div>

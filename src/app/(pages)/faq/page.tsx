@@ -29,10 +29,10 @@ const page = () => {
   return (
     <div>
       <FAQsPageHero/>
-      <section className="py-16 pb-8 px-4">
+      <section className="py-16 pb-2 px-4">
         <FaqAccordion />
       </section>
-      <div className='container px-8'>
+      <div className='border px-2'>
         <Testimonials/>
       </div>
       <CallToAction/>
