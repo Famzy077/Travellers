@@ -47,7 +47,7 @@ const Footer = () => {
         {/* Newsletter */}
         <div>
           <h3 className="text-[24px] font-bold text-[#E02454] mb-4">Newsletter</h3>
-          <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+          <p>Please enter your email to submit for our Newsletter</p>
           <form className="mt-4 flex">
             <input 
               type="email" 
