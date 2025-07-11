@@ -6,10 +6,10 @@ const CallToAction = () => {
     // The main section with a background image
     <section 
       className="relative my-10 mb-0 border-b border-gray-300 py-16 bg-cover bg-center text-white"
-      style={{ backgroundImage: "url('/images/cta-bg.jpg')" }} // Add a compelling background image here
+      style={{ backgroundImage: "url('/Images/office-4.jpg')" }}
     >
       {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-[#003865] bg-opacity-80"></div>
+      <div className="absolute inset-0 bg-[#003865]/75 bg-opacity-80"></div>
       
       {/* Content container */}
       <div className="relative z-10 container mx-auto px-4 text-center">

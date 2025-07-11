@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { FaTwitter, FaInstagram, FaPhoneAlt, FaFacebookF, FaBars, FaTimes } from 'react-icons/fa';
+import { FaTwitter, FaInstagram, FaPhoneAlt, FaFacebookF, FaTimes } from 'react-icons/fa';
+import {SquareMenu} from 'lucide-react'
 import { NavLink } from '@/app/types/navLinks';
 import { SiLinkedin, SiYoutube } from "react-icons/si";
 import { IoMdMail } from "react-icons/io";
@@ -97,7 +98,7 @@ const Header = () => {
             {/* Hamburger Menu Icon for Mobile */}
             <div className="md:hidden">
               <button onClick={() => setIsMenuOpen(true)} className="text-[#003865] text-2xl">
-                <FaBars />
+                <SquareMenu size={36}/>
               </button>
             </div>
           </div>

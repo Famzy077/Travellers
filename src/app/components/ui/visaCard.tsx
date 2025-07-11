@@ -82,8 +82,8 @@ const VisaSection: React.FC = () => {
            </AnimatedSection>
          </h2>
          <AnimatedSection>
-         <p className="mt-4 max-w-3xl mx-auto text-gray-600">
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime.
+         <p className="mt-4 max-w-3xl mx-auto text-[16px] text-[#7A8A9E]">
+           From consultation to visa approval, we guide you every step of the way — ensuring a smooth, stress-free immigration experience.
          </p>
          </AnimatedSection>
         </div>

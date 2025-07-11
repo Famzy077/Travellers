@@ -11,22 +11,22 @@ const WhyChooseUs = () => {
     {
       icon: FaDollarSign,
       title: 'Cost-Effective',
-      description: 'Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus.',
+      description: 'Get high-quality immigration services without breaking the bank — transparent pricing with no hidden fees.',
     },
     {
       icon: FaCcVisa,
       title: 'Visa Assistance',
-      description: 'Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus.',
+      description: 'Personalized support to help you choose the right visa and complete your application with ease.',
     },
     {
       icon: FaPassport,
       title: 'Faster Processing',
-      description: 'Dolor, sit amet, consectetur adipisicing elit. Soluta inventore cum accusamus.',
+      description: 'We streamline your paperwork to reduce wait times and get your visa approved quicker.',
     },
     {
       icon: FaUsers,
       title: 'Direct Interviews',
-      description: 'Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus.',
+      description: 'We connect you directly with embassy representatives and prepare you for interview success.'
     },
   ];
 
@@ -57,8 +57,8 @@ const WhyChooseUs = () => {
         </AnimatedSection>
 
         <AnimatedSection>
-          <p className="mt-4 max-w-3xl mx-auto text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!
+          <p className="mt-4 max-w-3xl mx-auto text-[16px] text-[#7A8A9E]">
+            We customize every immigration service to suit your personal goals — offering expert support, clear communication, and solutions that align with your unique needs.
           </p>
         </AnimatedSection>
 
@@ -71,7 +71,7 @@ const WhyChooseUs = () => {
                   <feature.icon className="icon" />
                 </div>
                 <h3 className="title">{feature.title}</h3>
-                <p className="descriptions">{feature.description}</p>
+                <p className="descriptions text-[16px] text-[#7A8A9E]">{feature.description}</p>
                 <div className="backdrop" />
               </div>
             ))}

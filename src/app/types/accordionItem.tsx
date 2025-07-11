@@ -19,9 +19,9 @@ const AccordionItem = ({ question, answer }: AccordionItemProps) => {
     <div className="border-b border-gray-200 py-4">
       <button
         onClick={toggleAccordion}
-        className="w-full flex justify-between items-center text-left"
+        className="w-full cursor-pointer flex justify-between items-center text-left"
       >
-        <h3 className="text-lg font-semibold text-[#003865]">{question}</h3>
+        <h3 className="text-lg cursor-pointer font-semibold text-[#003865]">{question}</h3>
         <span className="text-[#E02454] bg-pink-200 p-[9px] rounded-full">
           {isOpen ? <FaMinus /> : <FaPlus />}
         </span>
@@ -34,7 +34,7 @@ const AccordionItem = ({ question, answer }: AccordionItemProps) => {
         }`}
       >
         <div className="overflow-hidden">
-          <p className="pt-4 text-gray-600">
+          <p className="pt-4 text-[16px] text-[#7A8A9E]">
             {answer}
           </p>
         </div>

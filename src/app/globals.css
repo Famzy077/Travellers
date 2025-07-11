@@ -1,8 +1,11 @@
 @import "tailwindcss";
+
+html{
+  font-family: "Open Sans", sans-serif;
+}
 .readMore {
   position: relative;
 }
-
 .description {
   opacity: 0;
   transform: translateY(10rem);
@@ -60,9 +63,7 @@
 
 .descriptions {
   margin-top: 0.5rem;
-  font-size: 17.3px;
   z-index: 1;
-  color: rgb(153, 153, 153);
   position: relative;
 }
 
@@ -84,12 +85,6 @@
 .feature-card:hover .backdrop {
   transform: translateY(0%);
 }
-
-/* On click: rotate icon */
-/* .feature-card.clicked .icon-box {
-  transform: rotate(360deg);
-} */
-
 .feature-card:hover .icon {
   color: #E02454;
   transform: rotate(360deg);
@@ -101,10 +96,3 @@
   width: 100px;
   height: 100px;
 }
-
-/* Optional: make text white on hover */
-/* .feature-card:hover .title,
-.feature-card:hover .description,
-.feature-card:hover .icon {
-  color: white;
-} */

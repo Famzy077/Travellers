@@ -18,8 +18,8 @@ const ContactInfo = () => {
       <h2 className="text-3xl lg:text-4xl font-bold text-[#003865] mt-4 leading-tight ">
         Have Questions? <br /> Don&apos;t Hesitate to Contact Us
       </h2>
-      <p className="mt-4 text-gray-500">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat totam deserunt tempora. Tempore neque necessitatibus corporis error earum sint quae?
+      <p className="mt-4 text-[16px] text-[#7A8A9E]">
+        We&apos;re here to help with any inquiries about visas, immigration services, or travel support. Reach out today — our team is ready to assist you.
       </p>
 
       {/* Info Blocks */}
@@ -31,7 +31,7 @@ const ContactInfo = () => {
           </div>
           <div>
             <h3 className="font-bold text-[#003865] text-xl" >Location</h3>
-            <p className="text-gray-500 text-sm lg:text-[16px]">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+            <p className="text-[16px] text-[#7A8A9E]">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
           </div>
         </div>
 

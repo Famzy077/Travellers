@@ -9,11 +9,11 @@ import CallToAction from '@/app/components/ui/callToAction';
 const ServicesPageHero = () => {
   return (
     <div 
-      className="relative bg-cover h-[80vh] bg-center flex items-center justify-center text-center text-white"
-      style={{ backgroundImage: "url('/Images/breadcrumb.png')" }} // Add a suitable background image here
+      className="relative bg-cover h-[60vh] lg:h-[80vh] bg-center flex items-center justify-center text-center text-white"
+      style={{ backgroundImage: "url('/Images/breadcrumb.png')" }}
     >
-      <div className="absolute inset-0 bg-[#003865] opacity-80 h-[80vh]" />
-      <div className="relative z-10 mt-26">
+      <div className="absolute inset-0 bg-[#003865] opacity-80 h-[60vh] lg:h-[80vh]" />
+      <div className="relative z-10 mt-20">
         <h1 className="lg:text-5xl text-3xl font-bold">Our Services</h1>
         <div className="mt-4 text-[18px]">
           <Link href="/home" className="hover:text-gray-300">Home</Link>

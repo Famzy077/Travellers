@@ -55,21 +55,21 @@ const Testimonials = () => {
 
   const testimonialData = [
     {
-      quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati eiusmod tempor incididunt.',
+      quote: 'The team made the entire visa process smooth and stress-free. I had constant support and clear communication from day one until approval.',
       name: 'Person Name',
       profession: 'Profession',
       imageUrl: '/Images/testimonial-1.jpg', // Replace with your image paths
       rating: 5,
     },
     {
-      quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati eiusmod tempor incididunt.',
+      quote: 'I was worried about getting my student visa, but they guided me step by step and made it feel so easy. I’m now studying in Canada!',
       name: 'Person Name',
       profession: 'Profession',
       imageUrl: '/Images/testimonial-2.jpg',
       rating: 5,
     },
     {
-      quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitati eiusmod tempor incididunt.',
+      quote: 'Fast, reliable, and professional service. They answered all my questions and got my work visa processed quicker than expected',
       name: 'Another Person',
       profession: 'Developer',
       imageUrl: '/Images/testimonial-3.jpg',
@@ -102,8 +102,8 @@ const Testimonials = () => {
       </AnimatedSection>
 
       <AnimatedSection>
-        <p className="mt-4 max-w-3xl text-center px-5 lg:px-0 pb-7 mx-auto text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!
+        <p className="mt-4 max-w-3xl text-center px-5 lg:px-0 pb-7 mx-auto text-[16px] text-[#7A8A9E]">
+          Hear from the people we&apos;ve helped — real stories from satisfied clients who trusted us with their immigration journey.
         </p>
       </AnimatedSection>
       

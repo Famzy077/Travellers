@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section className="py-20 bg-white overflow-hidden">
+    <section className="py-20 max-sm:pt-5 bg-white overflow-hidden">
       <div className="lg:container mx-auto px-2 lg:px-10">
         <div className="lg:flex flex-cols-1 px-4 lg:px-10 gap-10 lg:gap-14 items-start">
           
@@ -61,10 +61,10 @@ const About = () => {
                     </div>
                 </div>
                 <h2 className="text-3xl lg:text-4xl font-bold text-[#003865] mt-2 leading-tight">
-                    We&apos;re Trusted <br /> Immigration Consultant <br /> Agency.
+                    We&apos;re a Trusted Immigration Consultancy You Can Rely On.
                 </h2>
-                <p className="mt-4 text-lg text-zinc-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt architecto consectetur iusto perferendis blanditiis assumenda dignissimos, commodi fuga culpa earum explicabo libero sint est mollitia saepe!
+                <p className="mt-4 text-[16px] text-[#7A8A9E]">
+                    With years of experience and a global network, we simplify the visa process and provide personalized support to help you relocate, work, or study abroad with confidence.
                 </p>
                 
                 <div className="mt-8 flex flex-col sm:flex-row sm:space-x-8 space-y-4 sm:space-y-0">

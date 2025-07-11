@@ -40,8 +40,8 @@ const ContactForm = () => {
       </div>
       <AnimatedSection>
         <h2 className="text-3xl lg:text-4xl font-bold text-[#003865] mt-4">Send Your Message</h2>
-        <p className="mt-4 text-gray-500">
-            The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes.
+        <p className="mt-4 text-[16px] text-[#7A8A9E]">
+          Our contact form is currently inactive. We’re working on setting up a fully functional system — feel free to reach out via email or phone in the meantime.
         </p>
       </AnimatedSection>
 
