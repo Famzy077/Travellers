@@ -3,7 +3,6 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const CallToAction = () => {
   return (
-    // The main section with a background image
     <section 
       className="relative my-10 mb-0 border-b border-gray-300 py-16 bg-cover bg-center text-white"
       style={{ backgroundImage: "url('/Images/office-4.jpg')" }}

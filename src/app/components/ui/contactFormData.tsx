@@ -19,7 +19,6 @@ const ContactForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Later, we will send this data to our Node.js backend
     console.log('Form Data Submitted:', formData);
     // Add logic here to call your API endpoint
   };
