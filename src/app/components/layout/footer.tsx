@@ -64,7 +64,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="bg-[#E02454] py-4">
         <div className="container mx-auto px-4 text-center text-white text-sm">
-          <p>© {`${currentYear} Travisa, All right reserved`}</p>
+          <p>© {`${currentYear} Smoothflight Travels, All right reserved`}</p>
         </div>
       </div>
     </footer>

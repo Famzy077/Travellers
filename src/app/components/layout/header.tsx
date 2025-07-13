@@ -47,7 +47,7 @@ const Header = () => {
         >
           <div className="mx-auto flex justify-between items-center text-[17px] text-[#a9a9a9a9]">
             <div className="flex items-center space-x-4">
-              <a href="mailto:Example@gmail.com" className="hover:text-[#E02454] flex items-center gap-2"> <IoMdMail className='text-[#E02454]' size={19}/> Example@gmail.com</a>
+              <a href="mailto:smoothflight-travels@gmail.com" className="hover:text-[#E02454] flex items-center gap-2"> <IoMdMail className='text-[#E02454]' size={19}/> Example@gmail.com</a>
               <a href="tel:+01234567890" className="hover:text-[#E02454] flex gap-1 items-center"><FaPhoneAlt className='text-[#E02454]' size={16} /> +01234567890</a>
             </div>
             <div className="flex items-center space-x-4 text-[#E02454]">
@@ -69,9 +69,9 @@ const Header = () => {
         <nav className="bg-[#F5F5F5] px-4 sm:px-14 py-3 lg:py-[9px]">
           <div className="mx-auto flex justify-between items-center">
             {/* Logo */}
-            <Link href="/" className="text-4xl text-[#E02454] font-bold flex items-start">
+            <Link href="/" className="text-4xl text-[#E02454] font-bold flex items-start max-sm:items-center">
              <Image src={LogoImg} title='logo image' height={65} width={65} alt="LogoImage" />
-             <h1 className='transform -translate-y-1'>Travisa</h1>
+             <h1 className='transform max-sm:translate-1 max-sm:-translate-x-1 -translate-y-1 max-sm:text-[1.7rem]'>Smoothflight</h1>
            </Link>
 
             {/* Desktop Navigation Links */}
@@ -97,7 +97,7 @@ const Header = () => {
 
             {/* Hamburger Menu Icon for Mobile */}
             <div className="md:hidden">
-              <button onClick={() => setIsMenuOpen(true)} className="text-[#003865] text-2xl cursor-pointer">
+              <button onClick={() => setIsMenuOpen(true)} className="text-[#003865] text-2xl cursor-pointer max-sm:translate-y-1 transform">
                 <SquareMenu size={36}/>
               </button>
             </div>

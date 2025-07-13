@@ -80,7 +80,7 @@ const VisaCategoriesPage = () => {
 
   return (
     <>
-      <div className='bg-gray-50 pb-2 pt-[5rem] px-4 sm:px-8'>
+      <div className='bg-gray-50 pb-2 pt-[5rem] lg:pt-[8rem] px-4 sm:px-8'>
         <h1 className='text-2xl uppercase my-5 text-[#003865]'>Visa Categories</h1>
         <div className='container mx-auto'>
           <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8'>

@@ -44,7 +44,7 @@ const ContactInfo = () => {
                 <div>
                     <h3 className="font-bold text-[#003865] text-xl">Quick Contact</h3>
                     <p className="text-[#003865] text-sm font-semibol lg:text-[17px]">Phone: <br /> +012 3456 7890</p>
-                    <p className="text-[#003865] text-sm font-mdium lg:text-[17px]">Email: travisa@example.com</p>
+                    <p className="text-[#003865] text-sm font-mdium lg:text-[17px]">Email: Smoothflight Travels@example.com</p>
                 </div>
             </div>
 
