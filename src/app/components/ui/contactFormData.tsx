@@ -98,7 +98,7 @@ const ContactForm = () => {
       <AnimatedSection>
         <h2 className="text-3xl lg:text-4xl font-bold text-[#003865] mt-4">Send Your Message</h2>
         <p className="mt-4 text-[16px] text-[#7A8A9E]">
-          Our contact form is currently inactive. We’re working on setting up a fully functional system — feel free to reach out via email or phone in the meantime.
+          We&apos;re here to help, please contact us via this below form. We will reply as soon as possible. Thanks for trusting us!
         </p>
       </AnimatedSection>
 
