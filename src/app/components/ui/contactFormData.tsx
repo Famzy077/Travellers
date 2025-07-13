@@ -57,7 +57,7 @@ const ContactForm = () => {
     try {
       await validationSchema.validate(formData, { abortEarly: false });
 
-      const response = await axios.post('http://localhost:5000/api/contact', formData);
+      const response = await axios.post('https://smoothflight-travels.onrender.com/api/contact', formData);
       
       // ✅ FIX: Check for 201 status code from the backend
       if (response.status === 201) {

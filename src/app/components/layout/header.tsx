@@ -47,7 +47,7 @@ const Header = () => {
         >
           <div className="mx-auto flex justify-between items-center text-[17px] text-[#a9a9a9a9]">
             <div className="flex items-center space-x-4">
-              <a href="mailto:smoothflight-travels@gmail.com" className="hover:text-[#E02454] flex items-center gap-2"> <IoMdMail className='text-[#E02454]' size={19}/> Example@gmail.com</a>
+              <a href="mailto:smoothflight-travels@gmail.com" className="hover:text-[#E02454] flex items-center gap-2"> <IoMdMail className='text-[#E02454]' size={19}/>smoothflight@gmail.com</a>
               <a href="tel:+01234567890" className="hover:text-[#E02454] flex gap-1 items-center"><FaPhoneAlt className='text-[#E02454]' size={16} /> +01234567890</a>
             </div>
             <div className="flex items-center space-x-4 text-[#E02454]">
